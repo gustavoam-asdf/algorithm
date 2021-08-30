@@ -14,12 +14,12 @@ const contiguousSubArrays = (a: number[]): number[][] => {
   return subArrays
 }
 
-const largestProductSubArray = (a: number[]) => {
+const largestProductSubArray = (a: number[]): number[] | undefined => {
   const subArrays: number[][] = contiguousSubArrays(a)
   const productArrayValues: Map<number, number[]> = new Map()
   let maxValue: number = Number.MIN_VALUE
   subArrays.forEach(subArray => {
-    const product = productOfArray(subArray)
+    const product: number = productOfArray(subArray)
     product > maxValue ? (maxValue = product) : 0
     return productArrayValues.set(product, subArray)
   })
