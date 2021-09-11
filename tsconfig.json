@@ -12,5 +12,5 @@
     // "paths": {
     // }
   },
-  "include": ["devsu-code-jam-preparation/*"]
+  "include": ["devsu-code-jam-preparation/*", "sorting-methods/*"]
 }
